@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gelo's Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div id="header">
+            <div class="container">
+                <a id="header-title" href="Mimo Excersice.html">My Blog</a>
+
+                <ul id="header-nav">
+                    <li><a href="About me.html">About</a></li>
+                    <li><a href="mailto:gelobreezy15@gmail.com">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="content">
+        <div class="post-container">
+            <div class="post">
+                <div class="post-author">
+                    <img src="data:image/jpeg;base64,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"
+                        alt="">
+                    <span>James Altucher</span>
+                </div>
+                <p class="post-date">February 2021</p>
+                <h3 class="post-title">THE BEST ADVICE EVER TO A TEENAGE DAUGHTER WHO NEEDS TO MAKE MONEY</h3>
+                <div class="post-content">
+
+
+                    <p> She said “No” to me and slammed the door. She was on my paper route. </p>
+
+                    <p> I asked out every girl on my paper route. All three of them. I liked having a captive audience.
+                        I’d hand them the paper and say, “Want to go to a movie?” </p>
+
+                    <p> They all said “No.”</p>
+
+                    <p>Well, one girl said, “Yes” but then the next day her brother told me she really meant “No.”</p>
+
+                    <p> I made about $2 an hour on my paper route. It took me about four hours a day and then another
+                        five
+                        or six hours on the weekends collecting money.</p>
+
+                    <p> One time, delivering papers, a guy drove by and yelled, “one day you’re going to rule the
+                        world!”</p>
+
+                    <p> I guess because delivering papers somehow showed work ethic. I worked hard but hated it. I had
+                        no
+                        life but delivering papers.</p>
+
+                    <p> So I will tell you another story. Don’t tell anyone please. It’s our secret. </p>
+
+                    <p> The local video store once gave me pamphlets to put at every house on my route. He gave me a $20
+                        bill. I took it. </p>
+
+                    <p> Within 15 minutes, I threw all the pamphlets in the sewer and never went back to that store.</p>
+
+                    <strong> All of this is to say:</strong>
+
+                    <p> My daughter is considering taking an $8 an hour job.</p>
+
+                    <p> I said to her, instead of that: why don’t you go to Lynda.com or CodeAcademy.com and learn basic
+                        WordPress skills. You can make blogs for stores.</p>
+
+                    <p> It would take you ONE DAY to learn the basics.</p>
+
+                    <p> Then go from door to door to every store in town.</p>
+
+                    <p> Say for $1000, plus $50 / month maintenance, you’ll make their blog or basic website for them
+                        and
+                        help them upkeep it. If they require a “shopping cart” then charge them $2500.</p>
+
+                    <p> She frowned a little and said, “They will say No. They don’t need it.”</p>
+
+                    <p> She doesn’t want anyone to say No to her. I can relate to that. <a
+                            href="https://jamesaltucher.com/blog/what-to-do-when-you-are-rejected/">I don’t like it when
+                            people say
+                            No
+                            to me either.</a> </p>
+
+                    <p> I said, “OK, we have about 40 stores on this street. Let’s say only 2 say yes. That’s $2000. It
+                        will
+                        take you ten hours to do the work.</p>
+
+                    <p><strong> That’s $200 an hour instead of $8 an hour.</strong></p>
+
+                    <p> And then the $100 a month you make in maintenance will take you about two hours a month.</p>
+
+                    <p> Here’s another idea, I said. To be on Wikipedia you need about 10 media references.</p>
+
+                    <p> We were in a restaurant. I pointed at the wall. “How many reviews does this restaurant have.”
+                    </p>
+
+                    <p>She was digging in. “I don’t know.” She looked away.</p>
+
+                    <p> “More than ten,” I said. “So you can make a Wikipedia page for them. Charge $200. Maintain it
+                        for
+                        $10 a month.”</p>
+
+                    <p> Or maybe every store needs a Facebook page. 1 in 7 Americans are on Facebook RIGHT NOW THIS
+                        SECOND. </p>
+
+                    <p> Restaurants can use their Page to get local customers to “Like” them in exchange for coupons and
+                        future messages. </p>
+
+                    <p><strong> Again: $500 for setup and $20 per store per month to maintain.</strong></p>
+
+                    <p> She didn’t want to do it. It’s not a skills issue. <a
+                            href="https://jamesaltucher.com/blog/the-skills-we-all-need-but-college-doesnt-teach/">ANYONE
+                            can get the skills by studying one or
+                            two
+                            online courses for about a day or two.</a> </p>
+
+                    <p> She does have skills at drawing logos, editing short videos, and some basic design skills she
+                        can
+                        improve with a course or two. </p>
+
+                    <p> On fiverr or freelancer.com she can do an infographic for $20-50 and it would take her thirty
+                        minutes.</p>
+
+                    <strong> Why work for a boss?</strong>
+
+                    <p> Here’s my guess. She wants to work at a hang out place. So she can work while seeing her
+                        friends.</p>
+
+                    <p> Ok, I get that. I would love to work at the same time that I hang out with my friends.</p>
+
+                    <p> But if she started doing what I suggest here’s what she would learn:</p>
+
+                    <span style="color:blue; font-weight: bold;"> A) SHE WOULD CREATE SOMETHING OUT OF NOTHING.</span>
+                    <br>
+                    <p> Most jobs don’t let you create something out of nothing.</p>
+
+                    <p> You just move some shit over to some other shit and get paid shit.</p>
+
+                    <p> The best things in the world are when you create something out of nothing. Like: I created her
+                        (in
+                        part) out of nothing.</p>
+
+                    <p> I admit I had help with that.</p>
+
+
+
+                    <p style="color: blue; font-weight: bold;"> B) BASIC COMPUTER SKILLS.</p>
+                    <p> Seriously: if you think you don’t have computer skills, take three online courses.</p>
+
+                    <p> Now you are in the top 1% of the world in computer skills and can charge for those skills.</p>
+
+
+
+                    <div class="post-container">
+                        <div class="post">
+                            <div class="post-author">
+                                <img src="C:\Users\X507U\Desktop\WEB DEVT CLASS\CSS\Excercises\Gelo Boy.jpg" alt="">
+                                <span>Gelo</span>
+                            </div>
+                            <p class="post-date">Today</p>
+                            <h3 class="post-title">5 things I wish my parents taught me about money</h3>
+                            <div class="post-content">
+                                <p>I am not born rich at wag po kayo mag alala, di pa rin ako mayaman hanggang ngayon.
+                                    <em> Hahaha
+                                    </em>. But
+                                    Im on my journey there, if only my parents taught me the value of saving and
+                                    investing early on?
+                                    I might hit the 7 figures in my late 20s. But they didn't and to make things clear?
+                                    <em>I don't
+                                        blame them. I can blame myself but not them.</em>
+                                </p>
+
+                                <p>Information at their time was so darn hard and if any drip of ideas about investing
+                                    are
+                                    available? Its on the hand of the 1%. Who's that 1%? Those few people that have the
+                                    cash to
+                                    invest and profit from a 10-20% return annualy. Those people that can enter the
+                                    stock market on
+                                    its early years in the Philippines when Jollibee, SM, Ayala Corp were still infant.
+                                    Those people
+                                    who are already rich and still kicking the scene coz they can afford to do so and
+                                    those who fits
+                                    the saying "Yung mga mayayaman na lalo pang yumayaman" sila yun! ...</p>
+
+                                <p>As I enter my late 20's I started educating myself and after reading tons of
+                                    self-help, personal
+                                    finance and self optimization articles? <strong> I came up with the things I wish my
+                                        parents
+                                        told about money when I was young: </strong></p>
+                                <br>
+
+                                <p><strong>1. I wish they given me the control over my money.</strong>
+                                    <br>
+                                    <br> I noticed that in my 20s? I am a compulsive buyer and a consistent "penge ng
+                                    pera mama kase
+                                    ubos
+                                    na sahod ko advocate". I wish they could have trusted me money when I was young.
+                                    Yung tipong
+                                    they will allocate a budget for me tapos ako bahala in a week sa baon ko. Ill be
+                                    responsible if
+                                    maubos ko yun at di na nila ko bibigyan kapag naubos ko yung pondo ko. I have the
+                                    power over my
+                                    money but they will teach me how to budget it, allocate it for simple goals and life
+                                    savings.
+                                </p>
+
+                                <p> May classmate ako nung HS, 1 week na baon nasakanya na, tapos sobrang natitipid na
+                                    nya yun
+                                    hanngang sa next week di na nya gagalawin pera nya ihuhulog na nya sa alkansya.
+                                    Syempre
+                                    nawiwirduhan ako sakanya non pero I know wherever she is now? She carried that
+                                    principle of
+                                    being responsible over her money through out her life.</p>
+
+                                <p>The result will probably be that I'll spend too much on frivolous stuff. At first.
+                                    But when I
+                                    want other things, I have to learn to save for them, and cut back on other areas.
+                                    Eventually,
+                                    I'll learn how to make decisions, through trial and error. It could take awhile, but
+                                    it’s better
+                                    I learn ng maaga kesa tumanda na ko ng walang pinagkatandaan.</p>
+
+                                <p><strong> 2.I wish they taught me that money can make its own babies</strong></p>
+
+                                <p> It can really multiplies itself. Trust me. It can create its own replica! No, not
+                                    the photo copy
+                                    kind of thing pero in a form of interests. I wish I have that idea of saving back
+                                    when I was a
+                                    child yung tipong ilalagay ko talga sa bank account ko tapos makikita ko na tutubo
+                                    kahit maliit,
+                                    atleast thats the basic foundation being taught there. I never heard them talked
+                                    about
+                                    investments either and that's sad.
+                                </p>
+
+                                <p><strong> 3.Work Smart not Work Hard</strong></p>
+
+
+                                <p> You can definitely get some cash from working hard no doubt, but in order for you to
+                                    create
+                                    wealth and be worry free as days goes by? You need to work smarter than anyone else.
+                                    Its not in
+                                    the context na manlalamang ka na ng kapwa mo. What I am saying is be more smarter on
+                                    getting
+                                    things done by simply allocating your time and efforts more efficiently. In my case
+                                    I work a
+                                    full time job and still have some side hustles that creates a new stream of income
+                                    for me every
+                                    month. If you can budget your cash flow? You must also budget your time to be more
+                                    productive
+                                    and to look for opportunities that will make you grow and in the end? Will add to
+                                    your savings
+                                    account.</p>
+
+
+                                <p>I cant imagine myself na umaasa lang sa paychecks ko every 15 days. But this is just
+                                    me ok? 3
+                                    years ago? Di din ganto mindset ko, but I learned and so I wish I have this
+                                    framework nung totoy
+                                    pa lang ako.
+
+
+                                <p> <strong> 4.Wish they taught me about saving for a goal</strong></p>
+
+                                <p>I don't have much when I was a kid, baon ko is around 5 pesos when I was on early
+                                    years of
+                                    elementary and 20 or 30 pesos when I was on grade 4 to 6, 50 pesos when I was on
+                                    High School and
+                                    80 pesos on my College years. I dont have that capacity (Well, I can If I want it or
+                                    have the
+                                    audacity to do so) to save for anything coz in my mind? Ma and Pa will provide. The
+                                    reason why I
+                                    dont have a cellphone till I worked on a Part- time job at Jollibee kase kala ko
+                                    bibilhan nila
+                                    ko, well it ends up na di pala. <em>Hahahaha!</em></p>
+
+                                <p>My parents and I do some window shopping on malls dati, kase nung bata pa ko we tend
+                                    to go out
+                                    and watch movies kapag off ng mother ko. Minsan nabibilhan ako ng laruan minsan
+                                    hindi..:) Pero
+                                    di nila nabanggit na mag ipon ako para mabili ko yung bagay na gusto ko. Did they
+                                    told me that?
+                                    Or didn't they? If they did? Its my bad then for not remembering.
+
+                                <p> <strong> 5.Surround yourself with smarter and pro-active people</strong></p>
+
+                                <p>I wish I had this idea when I was just literally figuring things out in my life. I
+                                    joined
+                                    several groups on my High School and College days like Performing Arts, Science
+                                    Clubs, Student
+                                    Government Clubs etc. but I don't intend to be educated there. I JUST WANT THE FAME.
+                                    <em>(One
+                                        hard
+                                        slap for my moronic young dumb and broke self)</em>. So i don't attend meetings
+                                    that much
+                                    and I don't
+                                    associate myself with smarter people better than I am. I have the opportunity in
+                                    plain sight
+                                    pero di ko pinansin.
+
+                                <p>Later in life I fixed my self and learned that surrounding yourself with good people
+                                    is
+                                    essential if you want to get ahead in any area, because successful people lift you
+                                    up to their
+                                    level. They inspire and motivate, and lead by example. Better yet, they encourage
+                                    you to explore
+                                    ideas and situations that you may not normally pursue on your own. </p>
+
+
+                                <div>
+                                    <h3 id="Retro"> [In retrospect here's what my Parents taught me about money]</h3>
+
+                                    <span><strong>Delayed Gratification</strong></span>
+
+                                    <p> Yeah, my family is not rich but that made me disciplined enough not to be a
+                                        lavish spender
+                                        in
+                                        tagalog KURIPOT hahahha! But that's one of the lessons I really loved about my
+                                        parents, Ma
+                                        will
+                                        make me wait and she promises to buy me a toy only If I wait for a week or two.
+                                        With that
+                                        simple
+                                        move? She made me realize that there are far more enjoyable toys that I can play
+                                        with. Tapos
+                                        minsan kapag pinaalala na ni Ma yung laruan? Madalas eh ayoko na. I dont know if
+                                        that was a
+                                        lesson or talagang tactics nya yun para makatipid. Nevertheless it taught me
+                                        about self
+                                        control
+                                        and that all huge return takes time. Want to see a proof of this thing on kids?
+                                        <em> Click
+                                            the video
+                                            Link</em>
+                                    </p>
+                                </div>
+                                <!-- <iframe class="youtube" width="420" height="315"
+                                    src="https://www.youtube.com/embed/v=QX_oy9614HQ&t=2s" control>
+                                </iframe> -->
+                                <iframe width="853" height="480" src="https://www.youtube.com/embed/47DmUM7MW7s"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+
+                                <br>
+                                <a href=" https://www.youtube.com/watch?v=QX_oy9614HQ&ab_channel=IgniterMedia"
+                                    id="vid">Watch this
+                                    video:
+                                    The
+                                    Marshmallow Test</a>
+
+
+                                <p><em> We are not born with self-control. Ask any parent. It’s something we need to
+                                        learn. As per
+                                        this
+                                        experiment by Stanford University, the kids were tracked over a 14 year period
+                                        with
+                                        interesting
+                                        results. The kids with less will power (‘’grabbers’’) suffered from low esteem
+                                        and were more
+                                        prone to envy and frustration. The kids who waited before taking the sweet
+                                        (those with more
+                                        self-control) were more socially competent, self-assertive, trustworthy,
+                                        dependable and
+                                        academically successful. I’m not preaching here, this is what the research tells
+                                        us. I think
+                                        you
+                                        will agree self-control is important. This brings me to the concept of delayed
+                                        gratification.
+                                        This topic is linked to my post on ''living within your means''. </em>
+                                    <strong>-Andre
+                                        Peters</strong>
+                                </p>
+
+
+                                <p>Who would have shy away from a return on investment? That will be a dumb move, but
+                                    people are
+                                    so
+                                    focused on instant gratification that they want their cash to multiply x2 agad agad
+                                    of what
+                                    they
+                                    invest. Di po ganun ang reality ang totoo is IT TAKES TIME. Kaya nga maraming
+                                    nalululong sa
+                                    pagsusugal at pagtaya ng lotto coz they think that its the only way para makaahon
+                                    sila sa
+                                    kahirapan. Same reason why we fall to scams that tells us na madali lang kumita at
+                                    saglit
+                                    lang
+                                    dodoble kagad yung capital mo.</p>
+
+                                <p> I am not saying that I didn't fall for these kind of things pero now that I have my
+                                    senses
+                                    back?
+                                    I can say that what my parents gave me is something to be treasured. Di man nila ko
+                                    naturuan
+                                    about saving and investing? They give me a gift that is irreplaceable of any
+                                    monetary value.
+                                    Something that I can pass to my children when time comes.</p>
+
+                                <p>The same reason why Im doing these articles <strong>(for free)</strong> for you guys,
+                                    coz I know?
+                                    Di man ako
+                                    kumita sa ginagawa ko now? It may create an impact in your lives which will make me
+                                    proud
+                                    and
+                                    much more richer than any other wealthy people out there. Maybe matagal pa na I will
+                                    get
+                                    noticed
+                                    and have a piece of my reward, but as long as I continue to produce something for
+                                    the
+                                    betterment
+                                    of others? I feel accomplished.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="footer">
+                    <div class="container">
+                        <div class="column">
+                            <h4>My links</h4>
+                            <p>
+                                <a href="https://www.facebook.com/gelo.amonelo">Facebook</a><br>
+                                <a href="https://www.facebook.com/Fruitsperity">Business</a>
+                            </p>
+                        </div>
+                        <div class="column">
+                            <h4>My Story</h4>
+                            <p>
+                                Im not <emp>smart.</emp> <br>
+                                Im not <emp>talented.</emp> <br>
+                                I am <em>persistent.</em> <br>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+</body>
+
+</html>
+
+<!--  -->
